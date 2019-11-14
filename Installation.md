@@ -79,3 +79,11 @@ This should welcome you.
 The default credentials are **admin** as username and **admin** as password.
 
 In the first login we need to change it.
+
+If you want to enable server side image rendering you need to install these packages.
+
+``` bash
+yum install fontconfig -y 
+yum install freetype* -y 
+yum install urw-fonts -y 
+```
