@@ -39,7 +39,12 @@ sslverify=1
 sslcacert=/etc/pki/tls/certs/ca-bundle.crt
 ```
 
-Then you need to issue the **yum update** command and then **yum install grafana**
+Then you need to issue the following commands.
+
+``` bash
+ yum update -y 
+ yum install grafana -y
+ ```
 
 If you just would like to install from the rpm do this.
 
@@ -56,3 +61,21 @@ After the installation is done we need to setup the service to automatically sta
 systemctl enable grafana-server
 systemctl start grafana-server
 ```
+
+By default the service listens on the port 3000. If you would like to you can change it.
+
+For now let's just stop the firewalld and see our first login.
+
+``` bash
+systemctl stop firewalld
+```
+
+In the browser navigate to the url: [http://host:3000](http://host:3000)
+
+This should welcome you.
+
+![login](./pics/login.PNG)
+
+The default credentials are **admin** as username and **admin** as password.
+
+In the first login we need to change it.
