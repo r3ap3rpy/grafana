@@ -4,6 +4,6 @@ This repo holds course materials for this amazing [tool](https://grafana.com), a
 
 You may find the official documentation [here](https://grafana.com/docs/)
 
-My course can be found on udemy or skillshare.
+My course can be found on [udemy](https://www.udemy.com/course/grafana-dashboarding-mastery) or skillshare.
 
 
